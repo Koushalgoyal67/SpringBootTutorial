@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script type="text/javascript" src="webjars/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+
+</head>
+
+<body>
+
+
+
+<main role="main" class="container-fluid">
+
+	<div class="row">
+		<div class="col-sm-4">
+			<p>Send Mail </p>
+			<form method="post" name="emailForm" enctype="multipart/form-data" action="/email/send">
+				<input type="email" name="receiverEmail" placeholder="To" multiple />
+				<input type="text" name="emailSubject" placeholder="Subject"/>
+				<textarea rows="4" cols="50" name="emailBody"></textarea>
+				<input type="file" name="file" />
+				<input type="submit" value="submit"/>
+			</form>
+		</div>
+	</div>
+
+</main>
+<!-- /.container -->
+
+<script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+</body>
+</html>

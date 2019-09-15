@@ -1,0 +1,12 @@
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/dao/ScoreTableRepo.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/model/TeamModel.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/model/PlayerModel.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/dao/TodayMatchRepo.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/dao/ScoreHistoryRepo.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/controller/TableTennisController.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/model/TodayMatchModel.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/dao/PlayerRepo.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/model/ScoreTableModel.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/TableTennisApplication.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/dao/TeamRepo.java
+/home/sarthak/aurigatt/TableTennisSpringBoot/src/main/java/com/tennis/demo/model/ScoreHistoryModel.java

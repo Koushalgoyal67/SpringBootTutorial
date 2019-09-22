@@ -14,9 +14,8 @@ import com.example.demo.model.StudentMySql;
 @RequestMapping("/mysql")
 public class StudentMySqlController {
 
-	@Autowired
+	@Autowired 
 	private StudentMySqlRepo studentMySqlRepo;
-	
 	
 	@GetMapping("/get/all")
 	public List<StudentMySql> getAll() {
@@ -36,7 +35,7 @@ public class StudentMySqlController {
 	@GetMapping("/get/builder-pattern")
 	public void storeStudentBuilderData() {
 		for(int i=20; i<40;i++) {
-			StudentMySql studentMySql =  StudentMySql.builder().id(i).name("Koushal"+i).build();
+			StudentMySql studentMySql =  StudentMySql.builder().id(i).name("koushal"+i).build();
 			studentMySqlRepo.save(studentMySql);
 		}
 	}

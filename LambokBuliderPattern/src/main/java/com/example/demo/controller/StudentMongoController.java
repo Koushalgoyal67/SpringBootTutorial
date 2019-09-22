@@ -9,26 +9,36 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dao.StudentMongoRepo;
 import com.example.demo.model.StudentMongo;
+import com.example.demo.model.StudentMySql; 
 
 @RestController
 @RequestMapping("/mongo")
 public class StudentMongoController {
 
 	@Autowired
-	private StudentMongoRepo student1Repo;
+	private StudentMongoRepo studentMongoRepo;
 	
 	@GetMapping("/get/all")
 	public List<StudentMongo> getStudent() {
-		return student1Repo.findAll();
+		return studentMongoRepo.findAll();
 	}
 	
 	@GetMapping("/get/store")
 	public void storeStudentData() {
-		for(int i=0;i<20000;i++) {
+		for(int i=0;i<10;i++) {
 			StudentMongo studentMongo =new StudentMongo();
 			studentMongo.setId(i);
 			studentMongo.setName("Koushal"+i);
-			student1Repo.save(studentMongo);
+			studentMongoRepo.save(studentMongo);
+		}
+	}
+	
+	@GetMapping("/get/builder-pattern")
+	public void storeStudentBuilderData() {
+		for(int i=10; i<20;i++) {
+			StudentMongo studentMongo =  StudentMongo.builder().id(i).name("Koushal"+i).build();
+			studentMongoRepo.save(studentMongo);
 		}
 	}
 }
+

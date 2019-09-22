@@ -8,3 +8,4 @@ public interface StudentMongoRepo extends MongoRepository<StudentMongo, Integer>
 
 	
 }
+ 

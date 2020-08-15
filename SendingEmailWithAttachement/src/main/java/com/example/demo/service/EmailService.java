@@ -48,7 +48,7 @@ public class EmailService {
         // true = multipart message
         MimeMessageHelper helper = new MimeMessageHelper(msg, true);
         helper.setTo(receiverEmail);
-
+        //helper.setFrom("koushal.goyal@cointribe.com");  // use this in case of outlook
         helper.setSubject(emailSubject);
 
         // default = text/plain
